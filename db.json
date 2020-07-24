@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "email": "samenyuk_mykola@ukr.net",
+      "password": "888888",
+      "name": "Admin",
+      "id": 1
+    }
+  ],
+  "home": [
+    {
+      "img": "https://www.thenational.ae/image/policy:1.915056:1569419566/Crater%20Lake.jpg?f=16x9&w=1200&$p$f$w=a8f7333",
+      "description": "Lake",
+      "id": 1
+    },
+    {
+      "img": "https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg",
+      "description": "Mountains",
+      "id": 2
+    },
+    {
+      "img": "https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/100819_JL_groundwater_feat-1028x579.jpg",
+      "description": "River",
+      "id": 3
+    },
+    {
+      "img": "https://storage.googleapis.com/planet4-international-stateless/2019/02/9390d0dd-gp0stq8zf_pressmedia.jpg",
+      "description": "Forest",
+      "id": 4
+    },
+    {
+      "img": "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg",
+      "description": "Desert",
+      "id": 5
+    }
+  ],
+  "table": [
+    {
+      "name": "Hydrogen",
+      "weight": 1.0079,
+      "symbol": "H",
+      "id": 1
+    },
+    {
+      "name": "Helium",
+      "weight": 4.0026,
+      "symbol": "He",
+      "id": 2
+    },
+    {
+      "name": "Lithium",
+      "weight": 6.941,
+      "symbol": "Li",
+      "id": 3
+    },
+    {
+      "name": "Beryllium",
+      "weight": 9.0122,
+      "symbol": "Be",
+      "id": 4
+    },
+    {
+      "name": "Boron",
+      "weight": 10.811,
+      "symbol": "B",
+      "id": 5
+    },
+    {
+      "name": "Carbon",
+      "weight": 12.0107,
+      "symbol": "C",
+      "id": 6
+    },
+    {
+      "name": "Nitrogen",
+      "weight": 14.0067,
+      "symbol": "N",
+      "id": 7
+    },
+    {
+      "name": "Oxygen",
+      "weight": 15.9994,
+      "symbol": "O",
+      "id": 8
+    },
+    {
+      "name": "Fluorine",
+      "weight": 18.9984,
+      "symbol": "F",
+      "id": 9
+    },
+    {
+      "name": "Neon",
+      "weight": 20.1797,
+      "symbol": "Ne",
+      "id": 10
+    },
+    {
+      "name": "Sodium",
+      "weight": 22.9897,
+      "symbol": "Na",
+      "id": 11
+    },
+    {
+      "name": "Magnesium",
+      "weight": 24.305,
+      "symbol": "Mg",
+      "id": 12
+    },
+    {
+      "name": "Aluminum",
+      "weight": 26.9815,
+      "symbol": "Al",
+      "id": 13
+    },
+    {
+      "name": "Silicon",
+      "weight": 28.0855,
+      "symbol": "Si",
+      "id": 14
+    },
+    {
+      "name": "Phosphorus",
+      "weight": 30.9738,
+      "symbol": "P",
+      "id": 15
+    },
+    {
+      "name": "Sulfur",
+      "weight": 32.065,
+      "symbol": "S",
+      "id": 16
+    },
+    {
+      "name": "Chlorine",
+      "weight": 35.453,
+      "symbol": "Cl",
+      "id": 17
+    },
+    {
+      "name": "Argon",
+      "weight": 39.948,
+      "symbol": "Ar",
+      "id": 18
+    },
+    {
+      "name": "Potassium",
+      "weight": 39.0983,
+      "symbol": "K",
+      "id": 19
+    },
+    {
+      "name": "Calcium",
+      "weight": 40.078,
+      "symbol": "Ca",
+      "id": 20
+    }
+  ]
+}

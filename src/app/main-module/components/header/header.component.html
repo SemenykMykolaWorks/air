@@ -1,0 +1,40 @@
+<header class="header">
+
+  <div class="header-routing">
+    <a class="button button_home"
+       [routerLink]="['/', URLS.HOME]"
+       routerLinkActive="active"> Home
+    </a>
+    <a class="button button_table"
+       [routerLink]="['/', URLS.TABLE]"
+       routerLinkActive="active"> Table
+    </a>
+  </div>
+
+  <div class="header-info">
+    <div class="dropdown show">
+      <a class="dropdown-toggle"
+         href="#"
+         role="button"
+         id="dropdownMenuLink"
+         data-toggle="dropdown"
+         aria-haspopup="true"
+         aria-expanded="false"
+      >
+        <span class="name">
+          Hello, {{userName}}
+        </span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" (click)="onLogout()">
+          <i class="fa fa-power-off icon"></i>
+          Logout
+        </a>
+      </div>
+    </div>
+    <div class="header-info__date">
+      {{ date | date:'dd.MM.yyyy' }}
+    </div>
+  </div>
+
+</header>

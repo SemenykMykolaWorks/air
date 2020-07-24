@@ -1,0 +1,38 @@
+<div class="card-header">
+  <div class="header-block">
+    <h3 class="title">Table list</h3>
+  </div>
+  <div class="form-inline pull-right m-r-2">
+    <div class="form-group">
+      <input type="text"
+             class="form-control"
+             [placeholder]="searchPlaceholder"
+             [(ngModel)]="searchValue">
+    </div>
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-secondary dropdown-toggle">
+        Parameter
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item"
+           *ngFor="let criteria of displayedColumns"
+           (click)="changeCriteria(criteria)">{{ criteria }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource | appFilter : searchValue : searchField" matSort>
+
+    <ng-container *ngFor="let col of displayedColumns" matColumnDef="{{ col }}">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ col }} </th>
+      <td mat-cell *matCellDef="let row"> {{ row[col] }} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>

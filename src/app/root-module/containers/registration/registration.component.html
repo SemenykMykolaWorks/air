@@ -1,0 +1,65 @@
+<p class="login-title text-center">Registration for access</p>
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+  <div class="form-group"
+       [ngClass]="{'has-error': registerForm.get('email').invalid && registerForm.get('email').touched}">
+    <label for="email">Email</label>
+    <input type="text"
+           class="form-control underlined"
+           id="email"
+           placeholder="Enter your email"
+           formControlName="email">
+    <span class="form-help-text"
+          *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched">
+      <span *ngIf="registerForm.get('email')['errors']['required']">Email cannot be empty. </span>
+      <span *ngIf="registerForm.get('email')['errors']['email']">Please enter a valid email. </span>
+      <span *ngIf="registerForm.get('email')['errors']['forbiddenEmail']">Email is already taken. </span>
+    </span>
+  </div>
+  <div class="form-group"
+       [ngClass]="{'has-error': registerForm.get('password').invalid && registerForm.get('password').touched}">
+    <label for="password">Password</label>
+    <input type="password"
+           class="form-control underlined"
+           id="password"
+           placeholder="Enter your password"
+           formControlName="password">
+    <span class="form-help-text"
+          *ngIf="registerForm.get('password').invalid && registerForm.get('password').touched">
+      <span *ngIf="registerForm.get('password')['errors']['required']">Password cannot be empty. </span>
+      <span *ngIf="registerForm.get('password')['errors']['minlength'] &&
+                   registerForm.get('password')['errors']['minlength']['requiredLength']">
+        Password must be more than
+        {{ registerForm.get('password')['errors']['minlength']['requiredLength'] }}
+        characters. Now {{ registerForm.get('password')['errors']['minlength']['actualLength'] }}.
+      </span>
+    </span>
+  </div>
+  <div class="form-group"
+       [ngClass]="{'has-error': registerForm.get('name').invalid && registerForm.get('name').touched}">
+    <label for="name">Name</label>
+    <input type="text"
+           class="form-control underlined"
+           id="name"
+           placeholder="Enter your name"
+           formControlName="name">
+    <span class="form-help-text"
+          *ngIf="registerForm.get('name').invalid && registerForm.get('name').touched">
+      Name cannot be empty.
+    </span>
+  </div>
+  <div class="form-group">
+    <button type="submit"
+            class="btn btn-block btn-primary"
+            [disabled]="registerForm.invalid">
+      Sign up
+    </button>
+  </div>
+  <div class="form-group">
+    <p class="text-muted text-xs-center">
+      Already have an account?
+      <a [routerLink]="'/login'">
+        Log in!
+      </a>
+    </p>
+  </div>
+</form>

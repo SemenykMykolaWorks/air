@@ -1,0 +1,13 @@
+<div class="carousel">
+  <ngb-carousel *ngIf="sliderData" [showNavigationArrows]="true" [showNavigationIndicators]="false">
+    <ng-template ngbSlide *ngFor="let item of sliderData; index as i">
+      <div class="picsum-img-wrapper">
+        <img [src]="item.img" alt="My image {{i + 1}} description">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ item.description }}</h3>
+        <p>Slide number {{ item.id }}.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

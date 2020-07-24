@@ -1,0 +1,17 @@
+.main-wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .app {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #f0f3f6;
+
+    .content {
+      padding: 20px 0 0 0;
+    }
+  }
+}

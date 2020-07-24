@@ -1,0 +1,10 @@
+.carousel {
+  margin: 0 auto;
+  max-width: 800px;
+  .picsum-img-wrapper {
+    img {
+      height: 400px;
+      width: 100%;
+    }
+  }
+}

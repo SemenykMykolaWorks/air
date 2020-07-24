@@ -1,0 +1,54 @@
+.login-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.form-group {
+  label {
+    font-style: italic;
+  }
+  button {
+    outline: none;
+  }
+  &.has-error {
+    span.has-error {
+      color: #f44;
+      font-size: 13px;
+    }
+    .form-control-feedback {
+      color: #f44;
+    }
+    .form-help-text {
+      color: #fb494d;
+      font-size: 13px;
+    }
+    .form-control {
+      border-color: #fb494d;
+    }
+  }
+}
+
+.form-control.underlined {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #d7dde4;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #52bcd3;
+  }
+}
+
+.has-error .form-control.underlined:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #52bcd3;
+}
+
+.has-error .form-control.underlined {
+  box-shadow: none;
+  border-color: #f44;
+}
